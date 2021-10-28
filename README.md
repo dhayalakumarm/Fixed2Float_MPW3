@@ -4,10 +4,10 @@ When writing signal processing application or interfacing hardware to get some d
 # Simulation Results
 ## Pre-Synthesis
     
-<img width="683" alt="sim_res" src="https://user-images.githubusercontent.com/61288836/139244314-78fc3ac2-b24c-408c-9da9-15ce61e1e8f0.PNG">
+<img width="700" alt="sim_res" src="https://user-images.githubusercontent.com/61288836/139244314-78fc3ac2-b24c-408c-9da9-15ce61e1e8f0.PNG">
     
 
 ## Post Synthesis
     
-<img width="681" alt="gls_sim" src="https://user-images.githubusercontent.com/61288836/139244286-7bde09a1-ed9a-420a-b06b-6cd6a3bef7e3.PNG">
+<img width="700" alt="gls_sim" src="https://user-images.githubusercontent.com/61288836/139244286-7bde09a1-ed9a-420a-b06b-6cd6a3bef7e3.PNG">
     
