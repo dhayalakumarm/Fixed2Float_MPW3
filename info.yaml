@@ -1,11 +1,11 @@
 ---
 project:
-  description: "A template SoC for Google sponsored Open MPW shuttles for SKY130."
+  description: "Fixed Point to Floating Point converter."
   foundry: "SkyWater"
-  git_url: "https://github.com/efabless/caravel_project_example.git"
-  organization: "Efabless"
-  organization_url: "http://efabless.com"
-  owner: "M Dhayalakumar"
+  git_url: "https://github.com/dhayalakumarm/Fixed2Float_MPW3.git"
+  organization: ""
+  organization_url: ""
+  owner: "Dhayalakumar M, S Skandha Deepsita, Sk Noor Mahammad"
   process: "SKY130"
   project_name: "Caravel"
   project_id: "00000000"
