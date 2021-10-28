@@ -1,0 +1,20 @@
+Using Techfile: /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using DEF file: /project/openlane/user_proj_example/runs/user_proj_example/results/routing/23-user_proj_example.def
+Design Name: user_proj_example
+Output GDS will be: /project/openlane/user_proj_example/runs/user_proj_example/results/klayout/user_proj_example.gds
+Extra GDSes:
+/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_12.gds /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_8.gds /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fakediode_2.gds /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__decap_12.gds /soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_4.gds
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_12.gds
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_8.gds
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fakediode_2.gds
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__decap_12.gds
+	/soft/ProgramFiles/caravel_user_project/openlane_caravel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_4.gds
+[INFO] Copying toplevel cell 'user_proj_example'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/project/openlane/user_proj_example/runs/user_proj_example/results/klayout/user_proj_example.gds'
+Done

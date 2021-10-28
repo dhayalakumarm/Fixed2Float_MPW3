@@ -1,0 +1,198 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef at line 68110.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /project/openlane/user_proj_example/runs/user_proj_example/results/placement/user_proj_example.placement.def
+[INFO ODB-0128] Design: user_proj_example
+[INFO ODB-0130]     Created 609 pins.
+[INFO ODB-0131]     Created 8176 components and 19371 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 18152 connections.
+[INFO ODB-0133]     Created 843 nets and 1007 connections.
+[INFO ODB-0134] Finished DEF file: /project/openlane/user_proj_example/runs/user_proj_example/results/placement/user_proj_example.placement.def
+[INFO]: Setting output delay to: 6.0
+[INFO]: Setting input delay to: 6.0
+[INFO]: Setting load to: 0.01765
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Looking for the following net(s): 
+[INFO]: Running Clock Tree Synthesis...
+[INFO CTS-0038] Number of created patterns = 50000.
+[INFO CTS-0038] Number of created patterns = 100000.
+[INFO CTS-0038] Number of created patterns = 150000.
+[INFO CTS-0038] Number of created patterns = 200000.
+[INFO CTS-0038] Number of created patterns = 250000.
+[INFO CTS-0038] Number of created patterns = 300000.
+[INFO CTS-0039] Number of created patterns = 313632.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           35          1           295         
+[WARNING CTS-0043] 6336 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 313632.
+[INFO CTS-0047]     Number of keys in characterization LUT: 2030.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "wb_clk_i" found for clock "wb_clk_i".
+[WARNING CTS-0041] Net "wb_clk_i" has 0 sinks. Skipping...
+[WARNING CTS-0083] No clock nets have been found.
+[INFO CTS-0008] TritonCTS found 0 clock nets.
+[WARNING CTS-0082] No valid clock nets in the design.
+[INFO]: Repairing long wires on clock nets...
+[INFO RSZ-0058] Using max wire length 3048um.
+[INFO]: Legalizing...
+Placement Analysis
+---------------------------------
+total displacement         21.2 u
+average displacement        0.0 u
+max displacement            1.8 u
+original HPWL           16933.7 u
+legalized HPWL          17324.1 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 204 instances
+[INFO DPL-0021] HPWL before           17324.1 u
+[INFO DPL-0022] HPWL after            16960.4 u
+[INFO DPL-0023] HPWL delta               -2.1 %
+check_report
+No paths found.
+check_report_end
+timing_report
+No paths found.
+timing_report_end
+min_max_report
+Startpoint: io_in[18] (input port clocked by wb_clk_i)
+Endpoint: io_out[31] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          6.00    6.00 v input external delay
+                  0.01    0.00    6.00 v io_in[18] (in)
+     1    0.00                           io_in[18] (net)
+                  0.01    0.00    6.00 v input10/A (sky130_fd_sc_hd__buf_1)
+                  0.06    0.10    6.10 v input10/X (sky130_fd_sc_hd__buf_1)
+     1    0.01                           net10 (net)
+                  0.06    0.00    6.10 v _526_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.16    6.27 v _526_/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           net41 (net)
+                  0.09    0.00    6.27 v output41/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.17    6.44 v output41/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           io_out[31] (net)
+                  0.08    0.00    6.44 v io_out[31] (out)
+                                  6.44   data arrival time
+
+                  0.00    0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                         -6.00   -6.00   output external delay
+                                 -6.00   data required time
+-----------------------------------------------------------------------------
+                                 -6.00   data required time
+                                 -6.44   data arrival time
+-----------------------------------------------------------------------------
+                                 12.44   slack (MET)
+
+
+Startpoint: io_in[14] (input port clocked by wb_clk_i)
+Endpoint: io_out[30] (output port clocked by wb_clk_i)
+Path Group: wb_clk_i
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock wb_clk_i (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          6.00    6.00 v input external delay
+                  0.01    0.00    6.00 v io_in[14] (in)
+     1    0.01                           io_in[14] (net)
+                  0.01    0.00    6.00 v input6/A (sky130_fd_sc_hd__buf_1)
+                  0.07    0.11    6.11 v input6/X (sky130_fd_sc_hd__buf_1)
+     2    0.01                           net6 (net)
+                  0.07    0.00    6.11 v _191_/A (sky130_fd_sc_hd__nor2_1)
+                  0.22    0.21    6.32 ^ _191_/Y (sky130_fd_sc_hd__nor2_1)
+     3    0.01                           _097_ (net)
+                  0.22    0.00    6.32 ^ _192_/C (sky130_fd_sc_hd__and3_1)
+                  0.08    0.21    6.54 ^ _192_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _098_ (net)
+                  0.08    0.00    6.54 ^ _193_/D_N (sky130_fd_sc_hd__or4b_4)
+                  0.12    0.52    7.05 v _193_/X (sky130_fd_sc_hd__or4b_4)
+     5    0.02                           _117_ (net)
+                  0.12    0.00    7.05 v _246_/A (sky130_fd_sc_hd__inv_2)
+                  0.10    0.13    7.18 ^ _246_/Y (sky130_fd_sc_hd__inv_2)
+     4    0.02                           _099_ (net)
+                  0.10    0.00    7.18 ^ _570_/S (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.42    7.60 v _570_/X (sky130_fd_sc_hd__mux2_1)
+     5    0.02                           _103_ (net)
+                  0.13    0.00    7.60 v _614_/S0 (sky130_fd_sc_hd__mux4_1)
+                  0.11    0.51    8.11 v _614_/X (sky130_fd_sc_hd__mux4_1)
+     1    0.01                           _187_ (net)
+                  0.11    0.00    8.11 v _569_/A0 (sky130_fd_sc_hd__mux2_8)
+                  0.11    0.40    8.51 v _569_/X (sky130_fd_sc_hd__mux2_8)
+    18    0.07                           _110_ (net)
+                  0.11    0.00    8.51 v _223_/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.09    8.60 ^ _223_/Y (sky130_fd_sc_hd__inv_2)
+     2    0.01                           _123_ (net)
+                  0.06    0.00    8.60 ^ _262_/A (sky130_fd_sc_hd__or2_2)
+                  0.11    0.17    8.77 ^ _262_/X (sky130_fd_sc_hd__or2_2)
+     5    0.02                           _131_ (net)
+                  0.11    0.00    8.77 ^ _263_/A (sky130_fd_sc_hd__inv_2)
+                  0.05    0.07    8.84 v _263_/Y (sky130_fd_sc_hd__inv_2)
+     5    0.02                           net33 (net)
+                  0.05    0.00    8.84 v _574_/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.34    9.18 v _574_/X (sky130_fd_sc_hd__mux2_1)
+     4    0.01                           _002_ (net)
+                  0.09    0.00    9.18 v _269_/B (sky130_fd_sc_hd__or3_2)
+                  0.11    0.52    9.70 v _269_/X (sky130_fd_sc_hd__or3_2)
+     4    0.01                           _135_ (net)
+                  0.11    0.00    9.70 v _278_/B (sky130_fd_sc_hd__or2_1)
+                  0.09    0.28    9.98 v _278_/X (sky130_fd_sc_hd__or2_1)
+     2    0.01                           _140_ (net)
+                  0.09    0.00    9.98 v _284_/A (sky130_fd_sc_hd__inv_2)
+                  0.07    0.09   10.07 ^ _284_/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           _011_ (net)
+                  0.07    0.00   10.08 ^ _287_/B (sky130_fd_sc_hd__nor2_1)
+                  0.04    0.05   10.12 v _287_/Y (sky130_fd_sc_hd__nor2_1)
+     1    0.00                           _016_ (net)
+                  0.04    0.00   10.12 v _552_/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.10    0.35   10.47 v _552_/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           net40 (net)
+                  0.10    0.00   10.48 v output40/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.17   10.65 v output40/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           io_out[30] (net)
+                  0.08    0.00   10.65 v io_out[30] (out)
+                                 10.65   data arrival time
+
+                  0.00   30.00   30.00   clock wb_clk_i (rise edge)
+                          0.00   30.00   clock network delay (ideal)
+                          0.00   30.00   clock reconvergence pessimism
+                         -6.00   24.00   output external delay
+                                 24.00   data required time
+-----------------------------------------------------------------------------
+                                 24.00   data required time
+                                -10.65   data arrival time
+-----------------------------------------------------------------------------
+                                 13.35   slack (MET)
+
+
+min_max_report_end
+clock_skew_report
+Clock wb_clk_i
+No launch/capture paths found.
+
+clock_skew_report_end
+wns_report
+wns 0.00
+wns_report_end
+tns_report
+tns 0.00
+tns_report_end
