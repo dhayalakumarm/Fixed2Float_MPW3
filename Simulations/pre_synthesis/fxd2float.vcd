@@ -1,0 +1,186 @@
+$date
+	Thu Oct 28 16:06:10 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module fxd2float_tb $end
+$var wire 1 ! zro $end
+$var wire 32 " b [31:0] $end
+$var reg 19 # a [18:0] $end
+$scope module u1 $end
+$var wire 19 $ a [18:0] $end
+$var wire 1 ! zro $end
+$var wire 1 % x $end
+$var wire 8 & o1 [7:0] $end
+$var wire 5 ' o [4:0] $end
+$var wire 32 ( b [31:0] $end
+$scope module t $end
+$var wire 24 ) a [23:0] $end
+$var wire 8 * o2 [7:0] $end
+$var wire 5 + o1 [4:0] $end
+$var wire 18 , o [17:0] $end
+$var wire 5 - b [4:0] $end
+$var wire 1 ! az $end
+$scope module t0 $end
+$var wire 4 . a [3:0] $end
+$var wire 1 / o $end
+$var wire 2 0 b [1:0] $end
+$upscope $end
+$scope module t1 $end
+$var wire 4 1 a [3:0] $end
+$var wire 1 2 o $end
+$var wire 2 3 b [1:0] $end
+$upscope $end
+$scope module t2 $end
+$var wire 4 4 a [3:0] $end
+$var wire 1 5 o $end
+$var wire 2 6 b [1:0] $end
+$upscope $end
+$scope module t3 $end
+$var wire 4 7 a [3:0] $end
+$var wire 1 8 o $end
+$var wire 2 9 b [1:0] $end
+$upscope $end
+$scope module t4 $end
+$var wire 4 : a [3:0] $end
+$var wire 1 ; o $end
+$var wire 2 < b [1:0] $end
+$upscope $end
+$scope module t5 $end
+$var wire 4 = a [3:0] $end
+$var wire 1 > o $end
+$var wire 2 ? b [1:0] $end
+$upscope $end
+$scope module t6 $end
+$var wire 4 @ a [3:0] $end
+$var wire 1 A o $end
+$var wire 2 B b [1:0] $end
+$upscope $end
+$scope module t7 $end
+$var wire 8 C a [7:0] $end
+$var wire 2 D sel [1:0] $end
+$var wire 2 E y1 [1:0] $end
+$var wire 4 F y [3:0] $end
+$upscope $end
+$upscope $end
+$scope module t0 $end
+$var wire 1 G mode $end
+$var wire 8 H p [7:0] $end
+$var wire 8 I q [7:0] $end
+$var wire 9 J temp [8:0] $end
+$var wire 9 K temp3 [8:0] $end
+$var wire 9 L temp2 [8:0] $end
+$var wire 9 M temp1 [8:0] $end
+$var wire 9 N sum [8:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10001001 N
+b101110111 M
+b1111111 L
+b1010 K
+b10001001 J
+b1010 I
+b1111111 H
+0G
+b1010 F
+b10 E
+b10 D
+b100000 C
+b10 B
+1A
+b100 @
+b0 ?
+0>
+b0 =
+b0 <
+0;
+b0 :
+b0 9
+08
+b0 7
+b10 6
+15
+b100 4
+b0 3
+02
+b0 1
+b0 0
+0/
+b0 .
+b1010 -
+b100000000100000 ,
+b1010 +
+b1010 *
+b10000000000 )
+b1000100100000000000000000000000 (
+b1010 '
+b1010 &
+0%
+b10000000000 $
+b10000000000 #
+b1000100100000000000000000000000 "
+1!
+$end
+#10
+b1000111100000000000000000000000 "
+b1000111100000000000000000000000 (
+b0 E
+b10001111 N
+b101110001 M
+b10001111 J
+b10000 K
+b0 *
+b0 F
+b0 D
+b10000 &
+b10000 I
+b0 B
+b0 C
+b10000 '
+b10000 -
+0A
+b0 @
+b0 6
+b10000 +
+05
+b0 4
+b10000000000000000 ,
+1;
+b1 :
+b10000000000000000 )
+b10000000000000000 #
+b10000000000000000 $
+#20
+b11 E
+b1111 *
+b1111 F
+b11 D
+b1 6
+b11 B
+b11011000 C
+b10 3
+b11011 +
+1A
+b1110 @
+b11 9
+12
+b100 1
+15
+b10 4
+b11110000011011000 ,
+18
+b1110 7
+b1000111111100010010000000000000 "
+b1000111111100010010000000000000 (
+b11110001001000000 )
+b11110001001000000 #
+b11110001001000000 $
+#120
